@@ -33,6 +33,10 @@
       btn.addEventListener('click', handlePlay);
       btn.removeEventListener('click', enableBlocklyMode);
     });
+    Blockly.inject('blocklyDiv', {
+      toolbox: document.getElementById('toolbox'),
+      scrollbars: false,
+    });
   }
 
   function enableBlocklyMode(e) {
